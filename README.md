@@ -19,7 +19,7 @@ CVE-2015-5254
 ![](http://p3.pstatp.com/large/6159000260c5ea3ec1a4)
 
 复现漏洞列表：
-[CVE-2015-5254](https://github.com/422926799/haq5201314/blob/master/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E6%A1%86%E6)
+[CVE-2015-5254](https://github.com/422926799/haq5201314/blob/master/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E6%A1%86%E6%9E%B6/doc/CVE-2015-5254.md)
 
 
 <b>这世界上所有的不利，都是由当事人的能力不足，导致当事人处于不利的地位</b>
