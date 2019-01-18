@@ -20,16 +20,20 @@ class Main:
         execs=input('exec:')
         daoru2(execs,ips,ports)
 
+    def cve_2016_3088(self):
+        oks=__import__('plugin.CVE-2016-3088',fromlist=True)
+        daoru2=getattr(oks,'jiancha')
+        userq=input('URL:')
+        path=input('path:')
+        daoru2(userq,path)
 if __name__ == '__main__':
     obj=Main()
-    exp_list=['[1] CVE-2015-5254']
-    exp_cat={'1':obj.cve_2015_5254}
+    exp_list=['[1] CVE-2015-5254','[2] CVE-2016-3088']
+    exp_cat={'1':obj.cve_2015_5254,'2':obj.cve_2016_3088}
     while True:
         print('[h] exploit select:)')
         for e in exp_list:
             print(e)
-            print('')
-            print('')
     
         user=input('select:>')
         if user in exp_cat:
