@@ -26,7 +26,6 @@ CVE-2017-15715
 
 [CVE-2016-3088](https://github.com/422926799/haq5201314/blob/master/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E6%A1%86%E6%9E%B6/doc/%E5%A4%8D%E7%8E%B0ActiveMQ%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%86%99%E5%85%A5%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2016-3088%EF%BC%89.md)
 
-[CVE-2017-15715]
-(https://422926799.github.io/2019/01/23/CVE-2017-15715-Repetition/)
+[CVE-2017-15715](https://422926799.github.io/2019/01/23/CVE-2017-15715-Repetition/)
 
 <b>这世界上所有的不利，都是由当事人的能力不足，导致当事人处于不利的地位</b>
