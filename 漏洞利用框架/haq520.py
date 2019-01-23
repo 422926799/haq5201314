@@ -26,10 +26,16 @@ class Main:
         userq=input('URL:')
         path=input('path:')
         daoru2(userq,path)
+
+    def cve_2017_15715(self):
+        ojn=__import__('plugin.CVE-2017-15715',fromlist=True)
+        daoru3=getattr(ojn,'jianche')
+        xwen=input('URL:')
+        daoru3(xwen)
 if __name__ == '__main__':
     obj=Main()
-    exp_list=['[1] CVE-2015-5254','[2] CVE-2016-3088']
-    exp_cat={'1':obj.cve_2015_5254,'2':obj.cve_2016_3088}
+    exp_list=['[1] CVE-2015-5254','[2] CVE-2016-3088','[3] CVE-2017-15715']
+    exp_cat={'1':obj.cve_2015_5254,'2':obj.cve_2016_3088,'3':obj.cve_2017_15715}
     while True:
         print('[h] exploit select:)')
         for e in exp_list:
