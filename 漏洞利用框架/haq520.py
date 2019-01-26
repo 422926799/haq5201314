@@ -32,10 +32,16 @@ class Main:
         daoru3=getattr(ojn,'jianche')
         xwen=input('URL:')
         daoru3(xwen)
+
+    def cve_2010_2861(self):
+        bqc=__import__('plugin.CVE-2010-2861',fromlist=True)
+        daoru4=getattr(bqc,'exploit')
+        userq=input('URL:')
+        daoru4(userq)
 if __name__ == '__main__':
     obj=Main()
-    exp_list=['[1] CVE-2015-5254','[2] CVE-2016-3088','[3] CVE-2017-15715']
-    exp_cat={'1':obj.cve_2015_5254,'2':obj.cve_2016_3088,'3':obj.cve_2017_15715}
+    exp_list=['[1] CVE-2015-5254','[2] CVE-2016-3088','[3] CVE-2017-15715','[4] CVE-2010-2861']
+    exp_cat={'1':obj.cve_2015_5254,'2':obj.cve_2016_3088,'3':obj.cve_2017_15715,'4':obj.cve_2010_2861}
     while True:
         print('[h] exploit select:)')
         for e in exp_list:
