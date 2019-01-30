@@ -7,6 +7,8 @@ except:
     pass
 
 import time
+import platform
+import os
 
 class Main:
     def cve_2015_5254(self):
@@ -38,10 +40,18 @@ class Main:
         daoru4=getattr(bqc,'exploit')
         userq=input('URL:')
         daoru4(userq)
+
+    def cve_2018_18854(self):
+        systemqs=platform.system()
+        if systemqs=='Windows':
+            os.system('python plugin/CVE-2018-18854.py')
+        elif systemqs=='Linux':
+            os.system('python3 plugin/CVE-2018-18854.py')
+
 if __name__ == '__main__':
     obj=Main()
-    exp_list=['[1] CVE-2015-5254','[2] CVE-2016-3088','[3] CVE-2017-15715','[4] CVE-2010-2861']
-    exp_cat={'1':obj.cve_2015_5254,'2':obj.cve_2016_3088,'3':obj.cve_2017_15715,'4':obj.cve_2010_2861}
+    exp_list=['[1] CVE-2015-5254','[2] CVE-2016-3088','[3] CVE-2017-15715','[4] CVE-2010-2861','[5] CVE-2018-18854']
+    exp_cat={'1':obj.cve_2015_5254,'2':obj.cve_2016_3088,'3':obj.cve_2017_15715,'4':obj.cve_2010_2861,'5':obj.cve_2018_18854}
     while True:
         print('[h] exploit select:)')
         for e in exp_list:
