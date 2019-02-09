@@ -47,11 +47,17 @@ class Main:
             os.system('python plugin/CVE-2018-18854.py')
         elif systemqs=='Linux':
             os.system('python3 plugin/CVE-2018-18854.py')
-
+    def cve_2017_12635(self):
+        ojb=__import__('plugin.CVE-2017-12635',fromlist=True)
+        dru=getattr(ojb,'cve_2017_12635')
+        user=input('URL:')
+        username=input('username:')
+        password=input('password:')
+        dru(user,username,password)
 if __name__ == '__main__':
     obj=Main()
-    exp_list=['[1] CVE-2015-5254','[2] CVE-2016-3088','[3] CVE-2017-15715','[4] CVE-2010-2861','[5] CVE-2018-18852']
-    exp_cat={'1':obj.cve_2015_5254,'2':obj.cve_2016_3088,'3':obj.cve_2017_15715,'4':obj.cve_2010_2861,'5':obj.cve_2018_18852}
+    exp_list=['[1] CVE-2015-5254','[2] CVE-2016-3088','[3] CVE-2017-15715','[4] CVE-2010-2861','[5] CVE-2018-18852','[6] CVE-2017-12635']
+    exp_cat={'1':obj.cve_2015_5254,'2':obj.cve_2016_3088,'3':obj.cve_2017_15715,'4':obj.cve_2010_2861,'5':obj.cve_2018_18852,'6':obj.cve_2017_12635}
     while True:
         print('[h] exploit select:)')
         for e in exp_list:
